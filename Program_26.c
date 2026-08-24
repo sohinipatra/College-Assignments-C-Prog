@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int total_sec, h, m, s;
+
+    printf("Enter seconds: ");
+    scanf("%d", &total_sec);
+
+    h = total_sec / 3600;
+    m = (total_sec % 3600) / 60;
+    s = total_sec % 60;
+
+    printf("Time: %d Hours, %d Mins, %d Sec\n", h, m, s);
+
+    return 0;
+}
